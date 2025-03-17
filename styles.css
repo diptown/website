@@ -1,0 +1,68 @@
+
+body{font-family:Times,Georgia; font-size:12pt; color:#000000; background-color:#CCCCCC; text-align:left;}
+
+
+h1{font-family:Georgia,Times; font-size:16pt; color:#C00000; font-weight:normal; text-align:center;}
+h2{font-family:Georgia,Times; font-size:14pt; color:#0000CC; font-weight:normal; text-align:center;}
+h3{font-family:Georgia,Times; font-size:12pt; color:#0000CC; font-weight:normal; text-align:center;}
+h4{font-family:Georgia,Times; font-size:10pt; color:#0000CC; font-weight:normal; text-align:center;}
+
+
+a{text-decoration:none; color:#6060C0;}
+
+
+span{font-family:Consolas,Courier; font-weight:bold; color:#006600;}
+
+
+pre{font-family:Consolas,Courier; font-weight:bold; color:#006600;}
+erp{font-family:Times,Georgia; font-weight:normal; color:#000000;}
+
+
+ol{
+   padding-left: 16px; /*Отступ для 1-о значных чисел*/
+}
+
+li{
+   padding-left: 14px;
+   text-indent: 0px; /*Отступ для последующей (после переноса) строки*/
+}
+
+
+/*ol{
+   padding-left: 24px; /*Отступ для 2-х значных чисел
+   list-style-position: outside; /*цифры «выравниваются по своему «правому» краю»
+}
+
+li{
+   padding-left: 14px;
+   text-indent: 0px; /*Отступ для последующей (после переноса) строки
+}*/
+
+
+table {
+   table-layout: auto;
+/*   border: 2px solid green;*/
+}
+
+table table {
+   table-layout: fixed;
+/*   border: 2px solid green;*/
+}
+
+td {
+/*   border: 2px solid red;*/
+}
+
+
+.tt-text {
+   font-family:Calibri;
+   font-size:9.5pt;
+}
+
+.tt-margin {
+   margin:0px 0px 0px 6px;
+}
+
+/*.word-wrapping {
+   word-break: break-all;
+}*/
