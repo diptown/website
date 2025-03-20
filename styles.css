@@ -1,44 +1,67 @@
 
-body{font-family:Times,Georgia; font-size:12pt; color:#000000; background-color:#CCCCCC; text-align:left;}
+body{font-family:Times,Georgia; font-size:12pt; font-weight:normal; color:#000000; background-color:#CCCCCC; text-align:left;}
 
+h1{font-family:Georgia,Times; font-size:16pt; font-weight:normal; color:#C00000; text-align:center;}
+h2{font-family:Georgia,Times; font-size:14pt; font-weight:normal; color:#C00000; text-align:center;}
+h3{font-family:Georgia,Times; font-size:12pt; font-weight:normal; color:#C00000; text-align:center;}
+h4{font-family:Georgia,Times; font-size:10pt; font-weight:normal; color:#0000CC; text-align:center;}
 
-h1{font-family:Georgia,Times; font-size:16pt; color:#C00000; font-weight:normal; text-align:center;}
-h2{font-family:Georgia,Times; font-size:14pt; color:#0000CC; font-weight:normal; text-align:center;}
-h3{font-family:Georgia,Times; font-size:12pt; color:#0000CC; font-weight:normal; text-align:center;}
-h4{font-family:Georgia,Times; font-size:10pt; color:#0000CC; font-weight:normal; text-align:center;}
-
+p{text-indent: 28px;} /*Красная строка*/
 
 a{text-decoration:none; color:#6060C0;}
-
-
-span{font-family:Consolas,Courier; font-weight:bold; color:#006600;}
-
 
 pre{font-family:Consolas,Courier; font-weight:bold; color:#006600;}
 erp{font-family:Times,Georgia; font-weight:normal; color:#000000;}
 
+/*span{font-family:Consolas,Courier; font-size:11pt; font-weight:bold; color:#006600;}*/
+code{font-family:Consolas,Courier; font-size:11pt; font-weight:bold; color:#006600;}
 
-ol{
-   padding-left: 16px; /*Отступ для 1-о значных чисел*/
+.redline{              /*class for <code> line_1*/
+   margin-left: 28px;  /*Красная строка*/
+/*   position: relative;
+   top: -.4em;         /*up*/
 }
 
-li{
-   padding-left: 14px;
-   text-indent: 0px; /*Отступ для последующей (после переноса) строки*/
+.up{
+   line-height:0.7em;
 }
 
 
-/*ol{
-   padding-left: 24px; /*Отступ для 2-х значных чисел
-   list-style-position: outside; /*цифры «выравниваются по своему «правому» краю»
+/*Акцентные абзацы START*/
+.imp_red{
+   border-left: 4px solid darkred; /*Параметры линии*/ 
+   margin-left: 12px;              /*Отступ слева до линии*/
+   padding-left: 12px;             /*Отступ справа от линии*/
 }
 
-li{
-   padding-left: 14px;
-   text-indent: 0px; /*Отступ для последующей (после переноса) строки
-}*/
+.imp_yellow{
+   border-left: 4px solid #b07d2b; /*Параметры линии*/ 
+   margin-left: 12px;              /*Отступ слева до линии*/
+   padding-left: 12px;             /*Отступ справа от линии*/
+}
 
+.imp_green{
+   border-left: 4px solid #006600; /*Параметры линии*/ 
+   margin-left: 12px;              /*Отступ слева до линии*/
+   padding-left: 12px;             /*Отступ справа от линии*/
+}
+/*Акцентные абзацы FINISH*/
 
+/*Список определений START*/
+dt:before {
+   content: "●";                   /*Маркер 1го уровня.*/
+   margin-left: 9px;               /*Отступ слева до маркера.*/
+   margin-right: 9px;              /*Отступ справа от маркера.*/
+}
+
+dd:before {
+   content: "○";                   /*Маркер 2го уровня.*/
+   margin-left: -12px;             /*смещение Отступа слева до маркера*/
+   margin-right: 9px;              /*Отступ справа от маркера.*/
+}
+/*Список определений FINISH*/
+
+/*Адаптация таблицы для gChrome START*/
 table {
    table-layout: auto;
 /*   border: 2px solid green;*/
@@ -52,8 +75,9 @@ table table {
 td {
 /*   border: 2px solid red;*/
 }
+/*Адаптация таблицы для gChrome FINISH*/
 
-
+/*Текст во вложенной таблице START*/
 .tt-text {
    font-family:Calibri;
    font-size:9.5pt;
@@ -62,7 +86,8 @@ td {
 .tt-margin {
    margin:0px 0px 0px 6px;
 }
+/*Текст во вложенной таблице FINISH*/
 
-/*.word-wrapping {
-   word-break: break-all;
-}*/
+.center{
+  text-align: center;
+}
